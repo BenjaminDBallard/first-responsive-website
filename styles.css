@@ -1,0 +1,63 @@
+:root{
+    --space: 24px;
+}
+
+.hero{
+    height: 50vh;
+    background-color: #2ccdc0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero__text{
+    color: white;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.columns{
+    background-color: #1b1b1b;
+    padding: 48px;
+    gap: 48px;
+    height: 50vh;
+    align-items: center;
+}
+
+.article{
+    color: white;
+    text-align: center;
+    padding-top: --space;
+    height: 40vh;
+    
+}
+
+.article::before{
+    content: "";
+    height: 32px;
+    display: block;  
+}
+
+.title{
+    margin: --space 0 0 0;
+}
+
+.blue::before{
+    background-color: aqua;
+    
+}
+
+.orange::before{
+    background-color: orange;
+}
+
+.green::before{
+    background-color: seagreen;
+}
+
+@media(min-width: 480px) {
+    .columns{
+        display: flex;
+
+    }
+}
